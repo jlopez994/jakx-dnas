@@ -3,7 +3,8 @@ services:
     build: 
       context: .
       args:
-        serverip: "your_server_ip_here"
+        jakxip: "your_server_ip_here"
+        dnasip: "your_dnas_ip_here"
     ports:
       - "443:443"
       - "53:53/udp"
