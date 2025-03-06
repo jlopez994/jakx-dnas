@@ -10,7 +10,7 @@ $TTL 60
 gate1.us.dnas.playstation.org    A        SERVER_IP
 gate1.jp.dnas.playstation.org    A        SERVER_IP
 gate1.eu.dnas.playstation.org    A        SERVER_IP
-ratchet3-prod1.pdonline.scea.com    A        SERVER_IP
 randc3-master.online.scee.com    A        SERVER_IP
 nightcrawler.insomniacgames.com    A        SERVER_IP
-ratchet3-pubeta.pdonline.scea.com    A        SERVER_IP
+jakx-prod.muis.pdonline.scea.com    A        SERVER_IP
+jakx-palmaster.muis.online.scee.com    A        SERVER_IP
