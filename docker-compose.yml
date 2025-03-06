@@ -1,6 +1,9 @@
 services:
   dnas-test:
-    build: .
+    build: 
+      context: .
+      args:
+        serverip: "your_server_ip_here"
     ports:
       - "443:443"
       - "53:53/udp"
