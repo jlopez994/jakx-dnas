@@ -1,5 +1,6 @@
 FROM ubuntu:16.04
-ARG serverip
+ARG jakxip
+ARG dnasip
 WORKDIR /work
 
 # ======= Installs for DNAS responses
@@ -30,7 +31,8 @@ ADD ./dns_files/db.dnas.rpz /etc/bind/db.dnas.rpz
 ADD ./dns_files/named.conf.local /etc/bind/named.conf.local
 ADD ./dns_files/named.conf.options /etc/bind/named.conf.options
 
-RUN sed -i "s/SERVER_IP/${serverip}/g" /etc/bind/db.dnas.rpz
+RUN sed -i "s/JAKX_IP/${jakxip}/g" /etc/bind/db.dnas.rpz
+RUN sed -i "s/DNAS_IP/${dnasip}/g" /etc/bind/db.dnas.rpz
 
 # DNAS Port
 EXPOSE 443
